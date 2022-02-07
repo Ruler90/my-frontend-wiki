@@ -1,4 +1,4 @@
-# Frontend Wiki
+# My Frontend Wiki
 
 ## Info
 - Helpful info and tutorials categorized into different folders.

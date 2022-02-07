@@ -1,0 +1,8 @@
+@forward './variables';
+@forward './mixins';
+@forward './placeholder-classes';
+
+@use './variables' as *;
+.some-class-2 {
+    color: $color-primary;
+}

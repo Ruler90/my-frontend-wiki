@@ -1,0 +1,71 @@
+.container, .sass-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.some-class-2 {
+  color: #0099ff;
+}
+
+.sass-header {
+  margin: 16px 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+@media (min-width: 1401px) {
+  .sass-header {
+    font-size: 48px;
+    color: #453acf;
+  }
+}
+
+.sass-header-2 {
+  margin: 16px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #9e5cd4;
+}
+
+.sass-header-3 {
+  margin: 16px 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #e03434;
+}
+
+.sass-box {
+  padding: 16px;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  border: 1px solid #000;
+  background-color: #0099ff;
+}
+
+.box, .color-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.color-box {
+  background-color: blue;
+}
+
+.other-box, .other-box--red {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+.other-box--red {
+  background-color: red;
+}

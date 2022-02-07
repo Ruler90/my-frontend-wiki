@@ -1,0 +1,58 @@
+// @use './variables' as *;
+// @use './mixins' as *;
+// zamiast dwóch powyższych jest tylko import jednego pliku, który zawiera w sobie wszystkie powyższe w połączeniu @forward
+@use './sass-helpers'as *;
+
+.container {
+    @extend %flex-container;
+    // other properties
+}
+
+.sass-header {
+    @include header-1;
+
+    @include screen-xxl {
+        font-size: 48px;
+        color: #453acf;
+    }
+}
+
+.sass-header-2 {
+    @include header-2(rgb(158, 92, 212));
+}
+
+.sass-header-3 {
+    @include header-3;
+}
+
+.sass-box {
+    @extend %flex-container;
+    @include rounded-box(10px, 10%);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border: 1px solid #000;
+    background-color: $color-primary;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.color-box {
+    @extend .box;
+    background-color: blue;
+}
+
+.other-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+
+    &--red {
+        @extend .other-box;
+        background-color: red;
+    }
+}

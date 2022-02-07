@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+@mixin header-1 {
+    margin: 16px 0;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+@mixin header-2($color) {
+    margin: 16px 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $color;
+}
+
+@mixin header-3($color: rgb(224, 52, 52)) {
+    margin: 16px 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $color;
+}
+
+
+// po użyciu gdzieś @include screen-xxl {property: value} zostanie to przekompilowane na MQ zawierającą podane właściwości
+@mixin screen-xxl {
+    @media (min-width: 1401px) {
+        @content;
+    }
+}
+
+@mixin rounded-box($padding: $minimum-padding, $radius: 0) {
+    // if padding would be lesser than minimum-padding, use minimum-padding
+    @if $padding < $minimum-padding {
+        padding: $minimum-padding;
+    } @else {
+        // else if padding would be greater than minimum-padding, use user-specified padding
+        padding: $padding;
+    }
+
+    @if $radius !=0 {
+        // if radius = 0, don't use border-radius
+        border-radius: $radius;
+    }
+}

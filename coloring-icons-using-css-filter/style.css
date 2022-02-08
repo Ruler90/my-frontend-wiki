@@ -1,0 +1,15 @@
+.icon {
+    width: 100px;
+}
+
+.icon--red {
+    filter: invert(22%) sepia(86%) saturate(7243%) hue-rotate(357deg) brightness(96%) contrast(120%);
+}
+
+.icon--dark-blue {
+    filter: invert(7%) sepia(93%) saturate(5876%) hue-rotate(246deg) brightness(98%) contrast(106%);
+}
+
+.icon--violet {
+    filter: invert(84%) sepia(27%) saturate(3569%) hue-rotate(239deg) brightness(92%) contrast(104%);
+}

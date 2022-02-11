@@ -1,11 +1,13 @@
 # SASS Tutorial
 
-## Info
-- Edytor: [Visual Studio Code](https://code.visualstudio.com/)
-- Rozszerzenia:
-    - [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
-    - [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
-    - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+## Quick start
+- Pobrać katalog i odpalić `index.html` w folderze `src`.
+- Poniżej mój config do obsługi i kompilowania kodu SASS oraz wprowadzania zmian live.
+    - Edytor: [Visual Studio Code](https://code.visualstudio.com/)
+    - Rozszerzenia:
+        - [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+        - [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
+        - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## _partials
 - Są to pliki .sass lub .scss, kórych nazwy zaczynają się od podkreślnika. Nie są one kompilowane do CSSa dopóki nie zostaną importowane/użyte w zwykłym pliku .scss.

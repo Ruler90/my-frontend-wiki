@@ -1,6 +1,6 @@
 # Lepsze console.logi
 
-## Quick start / Test
+## Quick start
 - Pierwsza opcja: devTools -> Console -> wklejenie kodu z pliku .js.
 - Druga opcja: podpięcie pliku .js do pliku HTML, odpalenie go, potem devTools -> Console.
 

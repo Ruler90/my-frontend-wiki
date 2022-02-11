@@ -1,5 +1,8 @@
 # Kolorowanie ikon za pomocą CSS filter
 
+## Quick start
+- Pobrać katalog i odpalić `index.html` w folderze `src`.
+
 ## Info
 - Gdy używamy ikon .svg i nie chcemy robić sobie bałaganu w kodzie wrzucając pełny kod każdej ikony, to wrzucamy je najczęściej jako `<img src="nasza-ikona.svg" alt="">`.
 - W przypadku małych projektów, gdzie nic się specjalnie nie zmienia, nie jest to problem. Gdy jednak jest to większy projekt czy dodajemy różne motywy, to może być konieczna zmiana koloru ikon.

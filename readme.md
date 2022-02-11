@@ -2,6 +2,7 @@
 
 ## Info
 - Helpful info and tutorials categorized into different folders.
+- Some of them are written in Polish and some in English.
 - I hope you'll find here something useful. Have a nice day! 😉
 
 ## More useful tools

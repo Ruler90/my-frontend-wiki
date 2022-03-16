@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS tabindex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="info">
+        <p class="info__text">On Android every version will work fine.</p>
+        <p class="info__text">On iOS:</p>
+        <ul class="info__list">
+            <li class="info__list-item"><b>v1</b> will open a new tab</li>
+            <li class="info__list-item"><b>v2</b> won't show an overlay and will open a new tab</li>
+            <li class="info__list-item"><b>v3</b> will show an overlay and allow to use the links</li>
+            <li class="info__list-item"><b>v4</b> will show an overlay and close it after tapping on the link</li>
+            <li class="info__list-item"><b>v5</b> will show an overlay and allow to use the links</li>
+        </ul>
+    </div>
+    
+    <div class="box" href="https://github.com/" target="_blank">
+        <a class="box__link" href="https://github.com/" target="_blank">v1 - No overlay, no tabindexes</a>
+    </div>
+    
+    <div class="box" href="https://github.com/" target="_blank">
+        <a class="box__link" href="https://github.com/" target="_blank">v2 - No tabindexes</a>
+        
+        <div class="box__overlay">
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 1</a>
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 2</a>
+        </div>
+    </div>
+    
+    <div class="box" href="https://github.com/" target="_blank" tabindex="0">
+        <a class="box__link" href="https://github.com/" target="_blank">v3 - Tabindex on the wrapper</a>
+        
+        <div class="box__overlay">
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 1</a>
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 2</a>
+        </div>
+    </div>
+    
+    <div class="box" href="https://github.com/" target="_blank" >
+        <a class="box__link" href="https://github.com/" target="_blank" tabindex="0">v4 - Tabindex on the main link</a>
+        
+        <div class="box__overlay">
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 1</a>
+            <a class="box__overlay-link" href="https://github.com/" target="_blank">Link 2</a>
+        </div>
+    </div>
+    
+    <div class="box" href="https://github.com/" target="_blank" tabindex="0">
+        <a class="box__link" href="https://github.com/" target="_blank">v5 - Tabindex on all links</a>
+        
+        <div class="box__overlay">
+            <a class="box__overlay-link" href="https://github.com/" target="_blank" tabindex="0">Link 1</a>
+            <a class="box__overlay-link" href="https://github.com/" target="_blank" tabindex="0">Link 2</a>
+        </div>
+    </div>
+
+</body>
+</html>

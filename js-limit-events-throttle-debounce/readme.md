@@ -25,6 +25,16 @@
     }, 300));
     ```
 
+## Usuwanie eventListenera
+- Jeśli chcemy usunąć evenListener, przy którym dodaliśmy funkcję z throttle lub debounce, to całość wystarczy przypisać do zmiennej.
+    ```javascript
+    const throttledFn = _.throttle(() => {
+        // tutaj nasza funkcja, którą przypisujemy do eventu
+        console.log('scrolling');
+    }, 300);
+    window.removeEventListener('scroll', throttledFn)
+    ```
+
 ## Lodash
 Jeśli chcemy sami wygenerować plik z odpowiednią funkcją ([Lodash Custom Builds](https://lodash.com/custom-builds)), to możemy wykonać poniższe kroki:
 1. Instalujemy globalnie `lodash-cli` za pomocą `npm i -g lodash-cli`.

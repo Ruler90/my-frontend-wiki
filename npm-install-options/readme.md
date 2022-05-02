@@ -16,5 +16,7 @@
     | `-B` | `--save-bundle` |
     |  | `--no-save` |
     |  | `--dry-run` |
+- Paczki instalowane globalnie trafiają na Windowsie domyślnie do:  
+`C:\Users\nazwaUsera\AppData\Roaming\npm\node_modules`
 - Źródła:
     - https://docs.npmjs.com/cli/v8/commands/npm-install

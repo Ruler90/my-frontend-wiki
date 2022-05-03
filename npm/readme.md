@@ -1,4 +1,8 @@
-# npm install options
+# npm
+
+## Inicjalizacja projektu
+- Do projektu dodajemy plik `package.json` za pomocą komendy `npm init`. Musimy wtedy dodatkowo zatwierdzić lub edytować różne opcje.
+- Jeśli chcemy automatycznie zatwierdzić wszystkie domyślne wybory, używamy komendy `npm init -y`.
 
 ## Options
 - Paczki z npm instalujemy za pomocą komendy `npm install package-name` lub krócej `npm i package-name`.

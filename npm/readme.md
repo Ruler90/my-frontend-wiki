@@ -15,7 +15,7 @@
     | `-g` | `--global` |
     | `-P` | `--save-prod` |
     | `-D` | `--save-dev` |
-    | `-O` | `--save-optional` /| `--save-peer` |
+    | `-O` | `--save-optional` / `--save-peer` |
     | `-E` | `--save-exact` |
     | `-B` | `--save-bundle` |
     |  | `--no-save` |

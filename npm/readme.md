@@ -22,5 +22,12 @@
     |  | `--dry-run` |
 - Paczki instalowane globalnie trafiają na Windowsie domyślnie do:  
 `C:\Users\nazwaUsera\AppData\Roaming\npm\node_modules`
+- Jeśli chcemy zainstalować najnowszą wersję wybranej paczki, to zazwyczaj wystarczy:  
+`npm i package-name`  
+np. `npm i -g typescript`
+- Jeśli chcemy zainstalować konkretną wersję wybranej paczki, to robimy to za pomocą:  
+`npm i package-name@version`  
+np. `npm i -g typescript@4.5.5`  
+Dostępne wersje konkretnej paczki możemy sprawdzić wyszukując na stronie npma wybraną paczkę i przechodząc do zakładki versions.
 - Źródła:
     - https://docs.npmjs.com/cli/v8/commands/npm-install

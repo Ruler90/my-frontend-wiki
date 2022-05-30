@@ -21,6 +21,10 @@ const darkThemeHandler = () => {
         section.break-1 .after-break .content-wrapper {
             background: none;
         }
+
+        .banner-after-excerpt {
+            background-color: #24476b;
+        }
     `
     document.body.appendChild(style);
 }

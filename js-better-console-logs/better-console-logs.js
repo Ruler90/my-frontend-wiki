@@ -42,3 +42,10 @@ const someFn = () => {
 for (let i = 0; i < 4; i++) {
     someFn();
 }
+
+// starts a timer you can use to track how long an operation takes
+console.time('doom-counter');
+// shows the time that have passed (when the timer is running)
+console.timeLog('doom-counter');
+// ends a timer and shows the time that have passed
+console.timeEnd('doom-counter');

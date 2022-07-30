@@ -26,6 +26,10 @@
     console.trace();
 
     console.count();
+
+    console.time('doom-counter');
+    console.timeLog('doom-counter');
+    console.timeEnd('doom-counter');
     ```
 - Skróty, których można użyć bezpośrednio w konsoli (nie zadziałają po użyciu w pliku .js):
     - `$` = `querySelector('some-element')`;

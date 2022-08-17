@@ -20,6 +20,7 @@ https://tools.mycoding.place/
 * [Bracket Select](https://marketplace.visualstudio.com/items?itemName=chunsen.bracket-select)
 * [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 * [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Gremlins tracker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nhoizey.gremlins)
 * [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
 * [Live SASS Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) (newer version by Glenn Marks)

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 200vh;
+    background-color: #123;
+}
+
+.horizontal {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid rgb(224, 28, 28);
+    overflow-x: auto;
+}
+
+.horizontal__inner {
+    width: 1500px;
+    height: 100px;
+    border: 2px solid rgb(221, 159, 26);
+}
+
+.vertical {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid rgb(35, 196, 35);
+    overflow-y: auto;
+}
+
+.vertical__inner {
+    width: 150px;
+    height: 1500px;
+    border: 2px solid rgb(26, 221, 211);
+}

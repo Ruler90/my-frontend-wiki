@@ -1,0 +1,24 @@
+/* for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    /* for vertical scrollbars */
+    width: 20px;
+    /* for horizontal scrollbars */
+    height: 10px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(orange, rgb(189, 28, 189));
+    /* vertical scrollbars margins */
+    margin-block: 30px;
+    /* horizontal scrollbars margins */
+    margin-inline: 100px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(red, blue);
+    border-radius: 5px;
+    /* we can add borders */
+    border: 1px solid #000;
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  background-color: #123;
+}
+
+.horizontal {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid rgb(224, 28, 28);
+  overflow-x: auto;
+}
+
+.horizontal__inner {
+  width: 1500px;
+  height: 100px;
+  border: 2px solid rgb(221, 159, 26);
+}
+
+.vertical {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid rgb(35, 196, 35);
+  overflow-y: auto;
+}
+
+.vertical__inner {
+  width: 150px;
+  height: 1500px;
+  border: 2px solid rgb(26, 221, 211);
+}
+
+/* for Firefox */
+/* with 'html' it will change every scrollbar on the page */
+/* with any element instead of 'html' it will change that element's scrollbar */
+html {
+  scrollbar-color: #8785ef #fff;
+  /* auto, none, thin */
+  scrollbar-width: thin;
+  /* for Chrome, Edge, Safari */
+  /* with 'html' it will change only main scrollbar */
+  /* with any element instead of 'html' it will change that element's scrollbar */
+  /* without 'html' it will change every scrollbar on the page */
+  /* we can also change scrollbar's track and/or thumb color on hover */
+  /* ::-webkit-scrollbar-track:hover */
+  /* ::-webkit-scrollbar-thumb:hover */
+}
+html::-webkit-scrollbar {
+  border-radius: 5px;
+  /* for vertical scrollbars */
+  width: 10px;
+  /* for horizontal scrollbars */
+  height: 10px;
+}
+html::-webkit-scrollbar-track {
+  /* or */
+  background-image: linear-gradient(orange, rgb(189, 28, 189));
+  border-radius: 5px;
+  /* only affects vertical scrollbars margin top and bottom */
+  /* doesn't affect horizontal scrollbars margins */
+  margin-block: 10px;
+  /* only affects horizontal scrollbars margin left and right */
+  /* doesn't affect vertical scrollbars margins */
+  margin-inline: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  /* or */
+  background-image: linear-gradient(red, blue);
+  border-radius: 5px;
+  /* we can also add borders, outline or box-shadow*/
+}

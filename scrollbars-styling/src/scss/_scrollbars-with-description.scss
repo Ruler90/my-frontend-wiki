@@ -1,0 +1,48 @@
+/* for Firefox */
+/* with 'html' it will change every scrollbar on the page */
+/* with any element instead of 'html' it will change that element's scrollbar */
+html {
+    scrollbar-color: #8785ef #fff;
+    /* auto, none, thin */
+    scrollbar-width: thin;
+
+    /* for Chrome, Edge, Safari */
+    /* with 'html' it will change only main scrollbar */
+    /* with any element instead of 'html' it will change that element's scrollbar */
+    /* without 'html' it will change every scrollbar on the page */
+    &::-webkit-scrollbar {
+        border-radius: 5px;
+        /* for vertical scrollbars */
+        width: 10px;
+        /* for horizontal scrollbars */
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        // background-color: #fbfaff;
+        /* or */
+        background-image: linear-gradient(orange, rgb(189, 28, 189));
+        border-radius: 5px;
+        /* only affects vertical scrollbars margin top and bottom */
+        /* doesn't affect horizontal scrollbars margins */
+        margin-block: 10px;
+        /* only affects horizontal scrollbars margin left and right */
+        /* doesn't affect vertical scrollbars margins */
+        margin-inline: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        // background-color: #8785ef;
+        /* or */
+        background-image: linear-gradient(red, blue);
+        border-radius: 5px;
+        /* we can also add borders, outline or box-shadow*/
+        // border: 1px solid yellow;
+        // outline: 3px solid #000;
+        // box-shadow: 0 0 4px 1px rgb(98, 255, 0);
+    }
+
+    /* we can also change scrollbar's track and/or thumb color on hover */
+    /* ::-webkit-scrollbar-track:hover */
+    /* ::-webkit-scrollbar-thumb:hover */
+}

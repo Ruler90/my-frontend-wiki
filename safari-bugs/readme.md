@@ -37,3 +37,6 @@
     - Jeśli w powyższej konfiguracji nie mamy nigdzie dodanego `tabindex="0"`, to na iOS wszyscy userzy nie będą mieli dostępnego overlaya, tylko element będzie od razu ich gdzieś kierował po tapnięciu.
 - [Kawałek kodu](https://codepen.io/mw_codes/pen/QWabgQO) z `tabindex="0"` umieszczonym w różnych miejscach kodu. Warto sprawdzić na Androidzie, gdzie wszystkie wersje działają oraz na iOS, gdzie brak lub dodanie `tabindex="0"` w różnej konfiguracji wywołuje różne efekty.
 - Ten sam kod jest umieszczony też w oddzielnym folderze.
+
+## Brak scroll-behavior: smooth w Safari < 15.4
+- Stan na 25.08.2022.

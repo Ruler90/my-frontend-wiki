@@ -40,5 +40,6 @@
 -   W ten sposób używa się często w tutorialach `npx create-react-app app-name` - nie samej instalujemy paczki `create-react-app` tylko używamy jej, żeby stworzyć nowy projekt Reactowy i zainstalować wszystkie potrzebne mu dependencje.
 -   Inny przykład to użycie paczki `json-server`, żeby zmockować endpoint na bazie lokalnego pliku json:  
     `npx json-server --watch sciezka-do-pliku/nazwa-pliku.json --port 8000`
+-   Powyższą komendę można też wrzucić pod jakąś nazwą do `scripts` w `package.json`, żeby szybko ją wywołać w razie potrzeby.
 -   Źródła:
     -   https://www.geeksforgeeks.org/what-are-the-differences-between-npm-and-npx/

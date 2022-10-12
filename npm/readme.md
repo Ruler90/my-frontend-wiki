@@ -43,3 +43,24 @@
 -   Powyższą komendę można też wrzucić pod jakąś nazwą do `scripts` w `package.json`, żeby szybko ją wywołać w razie potrzeby.
 -   Źródła:
     -   https://www.geeksforgeeks.org/what-are-the-differences-between-npm-and-npx/
+
+## Uruchomienie kilku skryptów jedną komendą
+
+- W pliku `package.json` dodajemy kilka skryptów, np.
+    ```json
+    "scripts": {
+        "start": "webpack serve",
+        "build": "webpack --mode production --watch",
+        "database": "npx json-server --watch data/db.json --port 8000"
+    }
+    ```
+- Jeśli za pomocą jednej komendy chcemy uruchomić kilka z nich naraz lub uruchomić wybrane i jeszcze dodać kolejne, to poniżej są 2 przykładowe rozwiązania. Możemy używać pełnych skrytów, jak i przypisanych wcześniej do nich nazw:
+    ```json
+    "scripts": {
+        "start": "webpack serve",
+        "build": "webpack --mode production --watch",
+        "database": "npx json-server --watch data/db.json --port 8000",
+        "example1": "concurrently \"webpack serve\" \"npx json-server --watch data/db.json --port 8000\"",
+        "example2": "concurrently \"start\" \"database\""
+    }
+    ```

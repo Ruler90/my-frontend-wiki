@@ -54,7 +54,7 @@
         "database": "npx json-server --watch data/db.json --port 8000"
     }
     ```
-- Jeśli za pomocą jednej komendy chcemy uruchomić kilka z nich naraz lub uruchomić wybrane i jeszcze dodać kolejne, to poniżej są 2 przykładowe rozwiązania. Możemy używać pełnych skrytów, jak i przypisanych wcześniej do nich nazw:
+- Jeśli za pomocą jednej komendy chcemy uruchomić kilka z nich naraz lub uruchomić wybrane i jeszcze dodać kolejne, to poniżej są 2 przykładowe rozwiązania. Możemy używać pełnych skryptów, jak i przypisanych wcześniej do nich nazw:
     ```json
     "scripts": {
         "start": "webpack serve",
@@ -64,3 +64,4 @@
         "example2": "concurrently \"start\" \"database\""
     }
     ```
+    `concurrently` to paczka, którą musimy wcześniej zainstalować, żeby powyższe działało.
